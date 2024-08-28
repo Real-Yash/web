@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        // Get the current URL path
+        var path = window.location.pathname.toLowerCase();
+
+        // Define your redirects
+        var redirects = {
+            "/twitter": "/profile/twitter.html",
+            "/facebook": "/profile/facebook.html",
+            "/github": "/profile/github.html",
+            "/instagram": "/profile/instagram.html",
+            "/linkedin": "/profile/linkedin.html",
+            "/x": "/profile/x.html",
+            "/youtube": "/profile/youtube.html"
+        };
+
+        // Check if the path matches any of your redirects
+        if (redirects[path]) {
+            window.location.href = redirects[path];
+        } else {
+            // If no match, show a custom 404 message and a button to return to the homepage
+            document.write("<h1>Page not found</h1>");
+            document.write("<p>The page you are looking for does not exist.</p>");
+            document.write('<a class="home-button" href="https://yash.is-a.dev">Go to Home Page</a>');
+        }
+    </script>
+</body>
+</html>
