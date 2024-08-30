@@ -1,5 +1,5 @@
-<<<<<<< HEAD
+<<<<<<< Welcome To Web (Yash.is-a.dev)
 # web
 =======
 you are above to get troll now hahaha....
->>>>>>> c9af4c8 (package main)
+>>>>>>> (package main)
